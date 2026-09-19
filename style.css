@@ -238,16 +238,17 @@
              @keyframes words {
                  0%,
                  20% {
-                     content: "Frontend Desingner";
+                     content: "Flutter Devloper";
                  }
                  21%,
                  40% {
-                     content: "Web Desingner";
+                     content: "Web Designer";
                  }
                  41%,
                  60% {
-                     content: "Web Developer";
+                     content: "Frontend Designer";
                  }
+                 
              }
              
              @keyframes blink {
@@ -403,6 +404,129 @@
                  align-items: center;
                  gap: 2.5rem;
              }
+
+             .projects {
+                 background-color: var(--second-background-color);
+             }
+
+             .projects .heading {
+                 margin-bottom: 5rem;
+             }
+
+             .projects-container {
+                 max-width: 1100px;
+                 margin: 0 auto;
+             }
+
+             .project-card {
+                 display: grid;
+                 grid-template-columns: minmax(280px, 0.9fr) 1.1fr;
+                 overflow: hidden;
+                 border: 2px solid var(--moz-text-decoration-color);
+                 border-radius: 2.5rem;
+                 background: linear-gradient(135deg, rgba(105, 192, 196, 0.14), rgba(0, 0, 0, 0.4));
+                 box-shadow: 0 0 22px rgba(105, 192, 196, 0.18);
+                 transition: 0.3s ease-in-out;
+             }
+
+             .project-card:hover {
+                 transform: translateY(-8px);
+                 box-shadow: 0 0 35px rgba(105, 192, 196, 0.4);
+             }
+
+             .project-visual {
+                 min-height: 330px;
+                 padding: 3rem;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-between;
+                 background: linear-gradient(145deg, #f8b45e, #b85d4b 58%, #352126);
+                 color: #fff8ed;
+             }
+
+             .project-badge {
+                 align-self: flex-start;
+                 padding: 0.8rem 1.4rem;
+                 border: 1px solid rgba(255, 255, 255, 0.7);
+                 border-radius: 2rem;
+                 font-size: 1.3rem;
+                 letter-spacing: 0.08rem;
+                 text-transform: uppercase;
+             }
+
+             .project-visual i {
+                 font-size: 10rem;
+                 color: #fff8ed;
+                 text-shadow: 0 10px 25px rgba(53, 33, 38, 0.4);
+             }
+
+             .project-visual-label {
+                 font-size: 2.2rem;
+                 font-weight: 700;
+                 line-height: 1.15;
+             }
+
+             .project-info {
+                 padding: 5rem;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+             }
+
+             .project-kicker {
+                 margin-bottom: 0.8rem;
+                 color: var(--moz-text-decoration-color);
+                 font-size: 1.4rem;
+                 font-weight: 700;
+                 letter-spacing: 0.16rem;
+                 text-transform: uppercase;
+             }
+
+             .project-info h3 {
+                 margin-bottom: 1.5rem;
+                 font-size: 4.2rem;
+             }
+
+             .project-description {
+                 max-width: 580px;
+                 color: #e4e4e4;
+                 font-size: 1.7rem;
+                 line-height: 1.7;
+             }
+
+             .project-tags {
+                 display: flex;
+                 flex-wrap: wrap;
+                 gap: 1rem;
+                 margin: 2.5rem 0;
+             }
+
+             .project-tags span {
+                 padding: 0.7rem 1.3rem;
+                 border: 1px solid var(--moz-text-decoration-color);
+                 border-radius: 2rem;
+                 color: var(--moz-text-decoration-color);
+                 font-size: 1.3rem;
+                 font-weight: 600;
+             }
+
+             .project-link {
+                 align-self: flex-start;
+                 color: white;
+                 font-size: 1.7rem;
+                 font-weight: 700;
+             }
+
+             .project-link i {
+                 margin-left: 0.4rem;
+                 color: var(--moz-text-decoration-color);
+                 vertical-align: middle;
+                 transition: 0.3s ease;
+             }
+
+             .project-link:hover i {
+                 margin-left: 1rem;
+             }
              
              .services-box {
                  background-color: var(--moz-text-decoration-color);
@@ -490,20 +614,38 @@
                  color: black;
              }
              
+             
              .progress.css {
-                 width: 50%;
+                 width: 70%;
+                 background-color: var(--moz-text-decoration-color);
+                 color: black;
+             }
+             .progress.Flutter {
+                 width: 80%;
+                 background-color: var(--moz-text-decoration-color);
+                 color: black;
+             }
+             .progress.Dart {
+                 width: 80%;
                  background-color: var(--moz-text-decoration-color);
                  color: black;
              }
              
              .progress.javascript {
-                 width: 10%;
+                 width: 40%;
+                 background-color: var(--moz-text-decoration-color);
+                 color: black;
+             }
+             
+             
+             .progress.python {
+                 width: 50%;
                  background-color: var(--moz-text-decoration-color);
                  color: black;
              }
              
              .progress.java {
-                 width: 30%;
+                 width: 40%;
                  background-color: var(--moz-text-decoration-color);
                  color: black;
              }
@@ -705,5 +847,11 @@
                  }
                  .services-container {
                      grid-template-columns: repeat(1, 1fr);
+                 }
+                 .project-card {
+                     grid-template-columns: 1fr;
+                 }
+                 .project-info {
+                     padding: 3rem;
                  }
              }
